@@ -6,8 +6,13 @@ import router from './router'
 import iView from 'iview'
 import 'iview/dist/styles/iview.css'
 
+Vue.use(iView, {
+  transfer: true,
+  size: 'large'
+})
+
 Vue.config.productionTip = false
-Vue.use(iView)
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

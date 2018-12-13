@@ -7,6 +7,7 @@
   <div id="Commodity">
     <layout>
       <header>
+       <Navigition></Navigition>
       </header>
       <content>
         <div class="content">
@@ -16,6 +17,7 @@
               <div style="height: 200px">
                 <div style="background:#eee;padding: 20px;width: 180px;height: 180px;margin-left: 50px;float: left">
 
+                  <img src="./logo.png" height="150px" width="150px">
                 </div>
                 <div style="height: 100px;float: left;margin-left: 50px;margin-top: 10px">
                   <h3>项目名称：数字红色延安</h3><br>
@@ -41,50 +43,52 @@
   </div>
 </template>
 <script>
-export default {
-  data () {
-    return {
-      columns1: [
-        {
-          title: 'Name',
-          key: 'name'
-        },
-        {
-          title: 'Age',
-          key: 'age'
-        },
-        {
-          title: 'Address',
-          key: 'address'
-        }
-      ],
-      data1: [
-        {
-          name: 'John Brown',
-          age: 18,
-          address: 'New York No. 1 Lake Park',
-          date: '2016-10-03'
-        },
-        {
-          name: 'Jim Green',
-          age: 24,
-          address: 'London No. 1 Lake Park',
-          date: '2016-10-01'
-        },
-        {
-          name: 'Joe Black',
-          age: 30,
-          address: 'Sydney No. 1 Lake Park',
-          date: '2016-10-02'
-        },
-        {
-          name: 'Jon Snow',
-          age: 26,
-          address: 'Ottawa No. 2 Lake Park',
-          date: '2016-10-04'
-        }
-      ]
+  import Navigition from "./Navigition";
+  export default {
+    components: {Navigition},
+    data () {
+      return {
+        columns1: [
+          {
+            title: 'Name',
+            key: 'name'
+          },
+          {
+            title: 'Age',
+            key: 'age'
+          },
+          {
+            title: 'Address',
+            key: 'address'
+          }
+        ],
+        data1: [
+          {
+            name: 'John Brown',
+            age: 18,
+            address: 'New York No. 1 Lake Park',
+            date: '2016-10-03'
+          },
+          {
+            name: 'Jim Green',
+            age: 24,
+            address: 'London No. 1 Lake Park',
+            date: '2016-10-01'
+          },
+          {
+            name: 'Joe Black',
+            age: 30,
+            address: 'Sydney No. 1 Lake Park',
+            date: '2016-10-02'
+          },
+          {
+            name: 'Jon Snow',
+            age: 26,
+            address: 'Ottawa No. 2 Lake Park',
+            date: '2016-10-04'
+          }
+        ]
+      }
     }
   }
-}
 </script>
